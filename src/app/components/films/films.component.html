@@ -1,0 +1,101 @@
+<div class="gallery">
+  @for(film of accion; track $index){
+  <div class="gallery-slider">
+    <div class="gallery-slider-div" [style.transform]="'translateX(' + translateValue + 'px)'">
+      @for(peli of film.films; track $index){
+      <div class="gallery-slider-div-peli">
+        <h2>{{ peli.title }}</h2>
+        <img [src]="peli.image" alt="{{ peli.title }}" />
+      </div>
+      }
+    </div>
+    <button (click)="prev()"><<</button>
+    <button (click)="next()">>></button>
+  </div>
+  }
+</div>
+
+<div class="gallery">
+    @for(film of anime; track $index){
+    <div class="gallery-slider">
+      <div class="gallery-slider-div" [style.transform]="'translateX(' + translateValue + 'px)'">
+        @for(peli of film.films; track $index){
+        <div class="gallery-slider-div-peli">
+          <h2>{{ peli.title }}</h2>
+          <img [src]="peli.image" alt="{{ peli.title }}" />
+        </div>
+        }
+      </div>
+      <button (click)="prev()"><<</button>
+      <button (click)="next()">>></button>
+    </div>
+    }
+  </div>
+
+  <div class="gallery">
+    @for(film of drama; track $index){
+    <div class="gallery-slider">
+      <div class="gallery-slider-div" [style.transform]="'translateX(' + translateValue + 'px)'">
+        @for(peli of film.films; track $index){
+        <div class="gallery-slider-div-peli">
+          <h2>{{ peli.title }}</h2>
+          <img [src]="peli.image" alt="{{ peli.title }}" />
+        </div>
+        }
+      </div>
+      <button (click)="prev()"><<</button>
+      <button (click)="next()">>></button>
+    </div>
+    }
+  </div>
+
+  <div class="gallery">
+    @for(film of sciFi; track $index){
+    <div class="gallery-slider">
+      <div class="gallery-slider-div" [style.transform]="'translateX(' + translateValue + 'px)'">
+        @for(peli of film.films; track $index){
+        <div class="gallery-slider-div-peli">
+          <h2>{{ peli.title }}</h2>
+          <img [src]="peli.image" alt="{{ peli.title }}" />
+        </div>
+        }
+      </div>
+      <button (click)="prev()"><<</button>
+      <button (click)="next()">>></button>
+    </div>
+    }
+  </div>
+
+  <div class="gallery">
+    @for(film of terror; track $index){
+    <div class="gallery-slider">
+      <div class="gallery-slider-div" [style.transform]="'translateX(' + translateValue + 'px)'">
+        @for(peli of film.films; track $index){
+        <div class="gallery-slider-div-peli">
+          <h2>{{ peli.title }}</h2>
+          <img [src]="peli.image" alt="{{ peli.title }}" />
+        </div>
+        }
+      </div>
+      <button (click)="prev()"><<</button>
+      <button (click)="next()">>></button>
+    </div>
+    }
+  </div>
+
+  <div class="gallery">
+    @for(film of topTen; track $index){
+    <div class="gallery-slider">
+      <div class="gallery-slider-div" [style.transform]="'translateX(' + translateValue + 'px)'">
+        @for(peli of film.films; track $index){
+        <div class="gallery-slider-div-peli">
+          <h2>{{ peli.title }}</h2>
+          <img [src]="peli.image" alt="{{ peli.title }}" class="gallery-slider-div-peli-top" />
+        </div>
+        }
+      </div>
+      <button (click)="prev()"><<</button>
+      <button (click)="next()">>></button>
+    </div>
+    }
+  </div>

@@ -1,0 +1,41 @@
+
+.gallery{
+    max-width: 100%;
+    height: auto;
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    &-slider{
+        max-width: 100%;
+        position:relative;
+        &-div{
+            gap: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 1em;
+            &-peli{
+                display: flex;
+                flex-direction: column;
+                transform: 0.5s ease;
+                &-top{
+                    max-height: 25rem;
+                }
+            }
+        }
+        button{
+            // background: transparent;
+            color:white;
+            background-color: transparent;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            height: 40px;
+            width: 40px;
+            
+        }
+    }
+
+    
+}

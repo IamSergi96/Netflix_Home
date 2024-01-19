@@ -1,0 +1,15 @@
+.divhero{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 6rem;
+    &-imageN{
+        height: 5rem;
+        padding: 10px;
+    }
+    &-imageC{
+        height: 2rem;
+        padding: 30px;
+    }
+}
